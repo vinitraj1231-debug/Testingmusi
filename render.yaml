@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: telegram-music-bot
+    env: python
+    plan: free
+
+    buildCommand: |
+      pip install --upgrade pip
+      pip install -r requirements.txt
+
+    startCommand: python main.py
+
+    
